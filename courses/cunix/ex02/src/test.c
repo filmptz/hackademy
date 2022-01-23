@@ -21,9 +21,14 @@ void   test_long()
   assert(my_strcmp("HELLO WORLD", "HELL WORLD") > 0);
 }
 
+void test_diff_len(){
+    assert(my_strcmp("HELLO", "HELL") > 0);
+}
+
 int   main()
 {
   test_small();
   test_long();
+  test_diff_len();
   return(0);
 }
